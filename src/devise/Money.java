@@ -13,19 +13,32 @@ public class Money {
 	private String fCurrency;
 	
 	public Money(int amount, String currency){
-		
+		this.fAmount = amount;
+		this.fCurrency = currency;
 	}
+	
 	public int amount(){
-		return 0;
+		return this.fAmount;
 	}
+	
 	public String currency(){
-		return ("t");
+		return this.fCurrency;
 	}
-	public Money add(Money m){
-		return null;
+	
+	public Money add(Money m) {
+		if(m.fCurrency.equals(this.fCurrency)) {
+			this.fAmount += m.fAmount;
+		}
+		
+		return this;
 	}
-	public Money add(int namount, String ncurrency){
-		return null;
+	
+	public Money add(int namount, String ncurrency) {
+		if(ncurrency.equals(this.fCurrency)) {
+			this.fAmount += namount;
+		}
+		
+		return this;
 	}
 
 	
