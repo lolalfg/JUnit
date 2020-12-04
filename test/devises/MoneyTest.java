@@ -18,17 +18,17 @@ public class MoneyTest {
 //		
 //		assertEquals(10, newObject.amount());
 //	}
-	private Money money = new Money(20, "EUR");
+	private Money monnaie = new Money(20, "EUR");
 
 	@Test
 	public void AmountTestPositive() {
-		assertTrue(money.amount() >= 0);
+		assertTrue(monnaie.amount() >= 0);
 	}
 	
 	@Test
 	public void CurrencyTest() {
-		assertTrue(money.currency().length() == 3);
-		assertTrue(money.currency() == "EUR" || money.currency() == "USD" || money.currency() == "CHF" || money.currency() == "GBP");
+		assertTrue(monnaie.currency().length() == 3);
+		assertTrue(monnaie.currency() == "EUR" || monnaie.currency() == "USD" || monnaie.currency() == "CHF" || monnaie.currency() == "GBP");
 	}
 	
 	@Test
@@ -36,7 +36,7 @@ public class MoneyTest {
 		Money moneyToAddEur = new Money(20, "EUR");
 
 		
-		assertEquals(money.add(moneyToAddEur).amount(), 40);
+		assertEquals(monnaie.add(moneyToAddEur).amount(), 40);
 	
 	}
 
