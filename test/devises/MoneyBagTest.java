@@ -1,20 +1,19 @@
 package devises;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.*;
 
 import java.util.ArrayList;
-import java.util.List;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
 import devise.Money;
 import devise.MoneyBag;
 
-
 public class MoneyBagTest {
-	
-	private MoneyBag moneyBag;
+
+private MoneyBag moneyBag;
 	
 	public MoneyBagTest() {
 		Money monnaie1 = new Money(20, "EUR");
@@ -44,4 +43,5 @@ public class MoneyBagTest {
 		
 		assertEquals(size++, this.moneyBag.getMoneyBagList().size());
 	}
+
 }
