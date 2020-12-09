@@ -8,13 +8,25 @@ import org.junit.jupiter.api.BeforeAll;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class VecteurUnionTest.
+ */
 public class VecteurUnionTest {
 
+	/** The vecteur 1. */
 	// Definition du type de variable
 	private Vector vecteur1;
+	
+	/** The vecteur 2. */
 	private Vector vecteur2;
+	
+	/** The vecteur union. */
 	private Vector vecteurUnion;
 
+	/**
+	 * Installation donnee.
+	 */
 	@BeforeAll
 	void installationDonnee() {
 
@@ -42,6 +54,9 @@ public class VecteurUnionTest {
 
 	}
 
+	/**
+	 * Destruction donnee.
+	 */
 	@AfterAll
 	public void destructionDonnee() {
 		
@@ -51,6 +66,9 @@ public class VecteurUnionTest {
 		vecteurUnion = null;
 	}
 
+	/**
+	 * Element at.
+	 */
 	@Test
 	void elementAt() {
 		
@@ -61,6 +79,9 @@ public class VecteurUnionTest {
 		}
 	}
 
+	/**
+	 * Removes the and check.
+	 */
 	@Test
 	void removeAndCheck() {
 		
